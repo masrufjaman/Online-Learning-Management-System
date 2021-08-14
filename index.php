@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Header Section Start -->
     <section id="header">
         <div class="container">
             <img src="/assets/img/logo.png" alt="logo" class="logo" />
@@ -30,6 +31,26 @@
             </div>
         </div>
     </section>
+
+    <!-- Side Navbar Start -->
+    <nav id="sideNav">
+        <ul>
+            <!-- TODO: add link -->
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">OFFER</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!-- Navbar menu image -->
+    <img src="./assets/img/menu.png" alt="Menu" id="menuBtn" />
+    <!-- Side Navbar End -->
+    <!-- Header Section End -->
+
+    <!-- JS Link -->
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
