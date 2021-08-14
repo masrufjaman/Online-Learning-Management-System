@@ -215,6 +215,51 @@
     </section>
     <!-- CONTACT End -->
 
+    <!-- Footer Start -->
+    <section id="footer">
+        <div class="container footer-row">
+            <hr />
+            <div class="footer-left-col">
+                <div class="footer-links">
+                    <div class="link-title">
+                        <h4>Product</h4>
+                        <small>Our Plan</small><br />
+                        <small>Free Trial</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>About Us</h4>
+                        <small>Request Demo</small><br />
+                        <small>FAQs</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Support</h4>
+                        <small>Features</small><br />
+                        <small>Contact Us</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Explore</h4>
+                        <small>Find a nonprofit</small><br />
+                        <small>Corporate Solution</small>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-col">
+                <div class="footer-info">
+                    <div class="copyright-text">
+                        <small>support@brainstormy.com</small><br />
+                        <small>copyright 2021 Brainstormy</small>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="./assets/img/logo.png" alt="" />
+                        <!-- common button -->
+                        <button class="common-btn">English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer End -->
+
     <!-- JS Link -->
     <script src="./assets/js/main.js"></script>
 </body>
