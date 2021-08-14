@@ -124,6 +124,37 @@
     </section>
     <!-- Features End -->
 
+    <!-- COURSES Strat -->
+    <section id="courses">
+        <div class="container course-row">
+            <div class="course-left-col">
+                <div class="course-text">
+                    <h1>Browse our top<br />courses</h1>
+                    <!-- small square box -->
+                    <span class="square"></span>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+                        necessitatibus, aut facere ipsum adipisci eveniet voluptatibus
+                        reiciendis nihil accusamus, consequatur hic neque, beatae
+                        repellendus rerum porro sunt nam? Quia, obcaecati?
+                    </p>
+                    <!-- common button -->
+                    <button class="common-btn">View All Courses</button>
+                    <!-- 2line & a box -->
+                    <div class="line">
+                        <span class="line-1"></span><br />
+                        <span class="line-2"></span><br />
+                        <span class="line-3"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="course-right-col">
+                <img src="./assets/img/course.png" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- COURSES End -->
+
     <!-- JS Link -->
     <script src="./assets/js/main.js"></script>
 </body>
