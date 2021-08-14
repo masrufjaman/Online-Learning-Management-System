@@ -155,6 +155,36 @@
     </section>
     <!-- COURSES End -->
 
+    <!-- OFFER Start -->
+    <!-- OFFER section almost same as ABOUT US section -->
+    <section id="offer">
+        <div class="about-left-col">
+            <img src="./assets/img/offer.png" alt="" />
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>Limitless learning,<br />limitless possibilities</h1>
+                <!-- small square box -->
+                <span class="square"></span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                    laborum ducimus, fugiat illo ullam autem nostrum obcaecati incidunt
+                    est assumenda amet? Libero iusto, doloremque ea sed autem fugit
+                    similique possimus? Repellendus voluptatibus impedit doloremque.
+                </p>
+                <!-- common button -->
+                <button class="common-btn">Start Free Trial</button>
+                <!-- 2line & a box -->
+                <div class="line">
+                    <span class="line-1"></span><br />
+                    <span class="line-2"></span><br />
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OFFER End -->
+
     <!-- JS Link -->
     <script src="./assets/js/main.js"></script>
 </body>
