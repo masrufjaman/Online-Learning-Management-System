@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <!-- Header Section Start -->
+    <!-- Header Start -->
     <section id="header">
         <div class="container">
             <img src="/assets/img/logo.png" alt="logo" class="logo" />
@@ -50,7 +50,7 @@
     <!-- Navbar menu image -->
     <img src="./assets/img/menu.png" alt="Menu" id="menuBtn" />
     <!-- Side Navbar End -->
-    <!-- Header Section End -->
+    <!-- Header End -->
 
     <!-- ABOUT US Start -->
     <section id="about">
@@ -88,7 +88,7 @@
     </section>
     <!-- ABOUT US End -->
 
-    <!-- Features Start -->
+    <!-- FEATURES Start -->
     <section id="features">
         <div class="feature-row">
             <div class="feature-col">
@@ -122,7 +122,7 @@
             <button class="common-btn">Start Free Trial</button>
         </div>
     </section>
-    <!-- Features End -->
+    <!-- FEATURES End -->
 
     <!-- COURSES Strat -->
     <section id="courses">
@@ -184,6 +184,36 @@
         </div>
     </section>
     <!-- OFFER End -->
+
+    <!-- CONTACT Start -->
+    <section id="contact">
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <h1>Sign Up to join our<br />learning community</h1>
+                <!-- TODO: Validate this form -->
+                <form action="">
+                    <input type="text" placeholder="Enter Name" />
+                    <input type="email" placeholder="Enter Email" />
+                    <input type="password" placeholder="Enter Password" />
+                    <div class="btn-box">
+                        <!-- 2 common button -->
+                        <button class="common-btn">Sign Up</button>
+                        <button class="common-btn">Start Free Trial</button>
+                    </div>
+                </form>
+                <!-- 2line & a box -->
+                <div class="line">
+                    <span class="line-1"></span><br />
+                    <span class="line-2"></span><br />
+                    <span class="line-3"></span>
+                </div>
+            </div>
+            <div class="contact-right-col">
+                <img src="./assets/img/contact.png" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT End -->
 
     <!-- JS Link -->
     <script src="./assets/js/main.js"></script>
