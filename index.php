@@ -16,6 +16,7 @@
             <img src="/assets/img/logo.png" alt="logo" class="logo" />
             <div class="header-text">
                 <h1>The purpose is to<br />tech, bring learning to people</h1>
+                <!-- small square box -->
                 <span class="square"></span>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio odio
@@ -23,6 +24,7 @@
                     maxime. Distinctio mollitia illum nesciunt cupiditate tenetur.
                 </p>
                 <button class="common-btn">Read More</button>
+                <!-- 2line & a box -->
                 <div class="line">
                     <span class="line-1"></span><br />
                     <span class="line-2"></span><br />
@@ -48,6 +50,42 @@
     <img src="./assets/img/menu.png" alt="Menu" id="menuBtn" />
     <!-- Side Navbar End -->
     <!-- Header Section End -->
+
+    <!-- ABOUT US Start -->
+    <section id="about">
+        <div class="about-left-col">
+            <img src="./assets/img/about.png" alt="" />
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <!-- small square box -->
+                <span class="square"></span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                    laborum ducimus, fugiat illo ullam autem nostrum obcaecati incidunt
+                    est assumenda amet? Libero iusto, doloremque ea sed autem fugit
+                    similique possimus? Repellendus voluptatibus impedit doloremque
+                    magnam ducimus quam cumque qui saepe nesciunt esse quisquam facilis
+                    aspernatur nemo, in quod rerum enim.
+                </p>
+                <br /><br />
+                <!-- 2line & a box -->
+                <div class="line">
+                    <span class="line-1"></span><br />
+                    <span class="line-2"></span><br />
+                    <span class="line-3"></span>
+                </div>
+
+                <h2>
+                    "Learning is not attained by chance, it must be sought for with ador
+                    and attended to with diligence
+                </h2>
+                <h3>---Abigail Adams</h3>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT US End -->
 
     <!-- JS Link -->
     <script src="./assets/js/main.js"></script>
