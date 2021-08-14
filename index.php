@@ -23,6 +23,7 @@
                     laudantium sequi sapiente ratione maiores ex possimus quibusdam
                     maxime. Distinctio mollitia illum nesciunt cupiditate tenetur.
                 </p>
+                <!-- common button -->
                 <button class="common-btn">Read More</button>
                 <!-- 2line & a box -->
                 <div class="line">
@@ -86,6 +87,42 @@
         </div>
     </section>
     <!-- ABOUT US End -->
+
+    <!-- Features Start -->
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="./assets/img/pic-1.png" alt="" />
+                <h4>Learn Anywhere</h4>
+                <p>Switch between your computer, tablet or mobile device</p>
+            </div>
+            <div class="feature-col">
+                <img src="./assets/img/pic-2.png" alt="" />
+                <h4>Expert Teachers</h4>
+                <p>Learn from industry experts who are passionate about teaching.</p>
+            </div>
+            <div class="feature-col">
+                <img src="./assets/img/pic-3.png" alt="" />
+                <h4>Unlimited Access</h4>
+                <p>
+                    Choose what yo'd like to learn from our extensive subscription
+                    library.
+                </p>
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="feature-btn">
+            <!-- 2line & a box -->
+            <div class="line">
+                <span class="line-1"></span><br />
+                <span class="line-2"></span><br />
+                <span class="line-3"></span>
+            </div>
+            <!-- common button -->
+            <button class="common-btn">Start Free Trial</button>
+        </div>
+    </section>
+    <!-- Features End -->
 
     <!-- JS Link -->
     <script src="./assets/js/main.js"></script>
