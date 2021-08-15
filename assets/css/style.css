@@ -306,3 +306,80 @@ hr {
   margin: 0 auto 20px;
   cursor: pointer;
 }
+
+/* *RESPONSIVE */
+@media only screen and (max-width: 770px) {
+  #header {
+    background-image: none;
+  }
+  .container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .logo {
+    margin-top: 20px;
+    width: 150px;
+  }
+  .header-text {
+    margin-top: 100px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .common-btn {
+    padding: 10px 16px;
+  }
+  /* SideNav */
+  #menuBtn {
+    width: 40px;
+    right: 50px;
+  }
+  /* Social-icons */
+  .social-icons img {
+    width: 14px;
+    margin: 15px auto;
+  }
+  /* About Us */
+  .about-left-col,
+  .about-right-col {
+    flex-basis: 100%;
+  }
+  .about-text {
+    margin: 50px 50px 0;
+    display: inline-block;
+  }
+  .about-text h2 {
+    margin: 50px 0 10px;
+    font-size: 18px;
+  }
+  /* Features */
+  .feature-col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  /* Course */
+  .course-left-col {
+    flex-basis: 100%;
+  }
+  .course-right-col {
+    flex-basis: 100%;
+    margin-top: 70px;
+  }
+  /* Contact */
+  .contact-left-col {
+    flex-basis: 100%;
+  }
+  .contact-right-col {
+    flex-basis: 100%;
+    margin-top: 50px;
+  }
+  /* Footer */
+  .footer-left-col,
+  .footer-right-col {
+    flex-basis: 100%;
+  }
+  .link-title {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+  }
+}
