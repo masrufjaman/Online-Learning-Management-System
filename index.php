@@ -260,6 +260,14 @@
     </section>
     <!-- Footer End -->
 
+    <!-- Social-icons -->
+    <div class="social-icons">
+        <img src="./assets/img/facebook.png" alt="" />
+        <img src="./assets/img/instagram.png" alt="" />
+        <img src="./assets/img/twitter.png" alt="" />
+        <img src="./assets/img/linkedin.png" alt="" />
+    </div>
+
     <!-- JS Link -->
     <script src="./assets/js/main.js"></script>
 </body>
