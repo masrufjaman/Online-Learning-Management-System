@@ -16,7 +16,7 @@
     <!-- Header Start -->
     <section id="header">
         <div class="container">
-            <img src="/assets/img/logo.png" alt="logo" class="logo" />
+            <img src="./assets/img/logo.png" alt="logo" class="logo" />
             <div class="header-text">
                 <h1>The purpose is to<br />tech, bring learning to people</h1>
                 <!-- small square box -->
