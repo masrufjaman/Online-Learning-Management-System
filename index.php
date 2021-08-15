@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brainstormy</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- *Smooth Scroll Link -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 
 <body>
@@ -38,13 +41,13 @@
     <!-- Side Navbar Start -->
     <nav id="sideNav">
         <ul>
-            <!-- TODO: add link -->
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">FEATURES</a></li>
-            <li><a href="#">COURSES</a></li>
-            <li><a href="#">OFFER</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <!-- *added link according to id -->
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#courses">COURSES</a></li>
+            <li><a href="#offer">OFFER</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
     <!-- Navbar menu image -->

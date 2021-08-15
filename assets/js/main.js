@@ -11,3 +11,9 @@ menuBtn.onclick = function() {
         sideNav.style.right = "-250px";
     }
 }
+
+// Smooth Scroll
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true
+});
