@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brainstormy</title>
   <!-- Font Awsome Link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/39afdd33d3.js" crossorigin="anonymous"></script>
   <!-- CSS Link -->
   <link rel="stylesheet" href="styles/admin.css" />
 </head>
@@ -19,7 +19,7 @@
       <ul>
         <li>
           <a href="#">
-            <span class="icon"><i class="fa fa-apple" aria-hidden="true"></i></span>
+            <span class="icon"><i class="fas fa-brain"></i></span>
             <span class="title">
               <h2>Brainstormy</h2>
             </span>
@@ -73,7 +73,33 @@
       </ul>
     </div>
     <!-- Side Dashboard Pane End -->
+
+    <!-- Main Section -->
+    <div class="main">
+      <div class="topbar">
+        <div class="toogle" onclick="toogleMenu();">
+          <i class="fas fa-bars"></i>
+        </div>
+        <!-- Search Box -->
+        <div class="search">
+          <label>
+            <input type="text" placeholder="Search here" />
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </label>
+        </div>
+        <!-- User Image -->
+        <div class="user">
+          <!-- TODO: Add an user image -->
+          <img src="/assets/img/twitter.png" alt="userImage" />
+        </div>
+      </div>
+
+      <!-- CardBox -->
+    </div>
   </div>
+
+  <!-- JS link -->
+  <script src="js/admin.js"></script>
 </body>
 
 </html>
