@@ -51,6 +51,7 @@
             <li><a href="#offer">OFFER</a></li>
             <li><a href="#contact">CONTACT</a></li>
             <li><a href="templates/admin/dashboard.php">ADMIN PANEL</a></li>
+            <li><a href="templates/students/dashboard.php">CLASSROOM</a></li>
         </ul>
     </nav>
     <!-- Navbar menu image -->
