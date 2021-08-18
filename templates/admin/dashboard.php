@@ -94,7 +94,46 @@
         </div>
       </div>
 
-      <!-- CardBox -->
+      <!-- CardBox Start -->
+      <div class="cardBox">
+        <div class="card">
+          <div>
+            <div class="numbers">1,042</div>
+            <div class="cardName">Students</div>
+          </div>
+          <div class="iconBox">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">80</div>
+            <div class="cardName">Lecturers</div>
+          </div>
+          <div class="iconBox">
+            <i class="fas fa-user-tie"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">15</div>
+            <div class="cardName">Courses</div>
+          </div>
+          <div class="iconBox">
+            <i class="fas fa-book"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">42</div>
+            <div class="cardName">Comments</div>
+          </div>
+          <div class="iconBox">
+            <i class="fas fa-comments"></i>
+          </div>
+        </div>
+      </div>
+      <!-- CardBox End -->
     </div>
   </div>
 
