@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/39afdd33d3.js" crossorigin="anonymous"></script>
     <!-- CSS Link -->
     <link rel="stylesheet" href="styles/admin.css" />
+    <link rel="stylesheet" href="styles/new.css" />
 </head>
 
 <body>
