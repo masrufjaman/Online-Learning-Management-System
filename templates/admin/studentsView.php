@@ -4,6 +4,8 @@ include("header.php");
 include("topbar.php");
 // TopBar  End
 include("multiButtons.php");
+// Table
+include("tableView.php");
 ?>
 <?php
 include("footer.php");
