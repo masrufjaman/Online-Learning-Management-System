@@ -1,6 +1,6 @@
 /** button group styles **/
 .btn-group {
-  margin-left: 20px;
+  margin: 0 20px 20px 20px;
   border-radius: 1rem;
   -webkit-box-shadow: -2.3px -2.3px 3.8px rgba(255, 255, 255, 0.2),
     -6.3px -6.3px 10.6px rgba(255, 255, 255, 0.3),
