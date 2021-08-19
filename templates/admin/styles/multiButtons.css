@@ -2,6 +2,7 @@
 .btn-group {
   margin: 0 20px 20px 20px;
   border-radius: 1rem;
+  display: flex;
   -webkit-box-shadow: -2.3px -2.3px 3.8px rgba(255, 255, 255, 0.2),
     -6.3px -6.3px 10.6px rgba(255, 255, 255, 0.3),
     -15.1px -15.1px 25.6px rgba(255, 255, 255, 0.4),
@@ -19,7 +20,6 @@
     15.1px 15.1px 25.6px rgba(0, 0, 0, 0.046),
     50px 50px 85px rgba(172, 107, 107, 0.07);
 }
-
 .btn-group__item {
   border: none;
   min-width: 6rem;
@@ -73,3 +73,12 @@
   transform: translatey(-2px);
 }
 /*# sourceMappingURL=new.css.map */
+
+/* Clock */
+.clock {
+  color: #003147;
+  font-size: 30px;
+  font-family: Orbitron;
+  letter-spacing: 7px;
+  margin: auto;
+}
