@@ -9,31 +9,31 @@
         <div class="modal-content">
             <div class="close">+</div>
             <h1>Add New Student</h1>
-            <form action="" method="">
+            <form action="studentsView.php" method="post">
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Full Name</span>
-                        <input type="text" placeholder="Enter the name" required>
+                        <input type="text" name="FullName" placeholder="Enter the name" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Username</span>
-                        <input type="text" placeholder="Enter the username" required>
+                        <input type="text" name="" placeholder="Enter the username" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Email</span>
-                        <input type="text" placeholder="Enter the email" required>
+                        <input type="text" name="" placeholder="Enter the email" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Phone Number</span>
-                        <input type="text" placeholder="Enter the number" required>
+                        <input type="text" name="ParentsContact" placeholder="Enter the number" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Password</span>
-                        <input type="text" placeholder="Enter the password" required>
+                        <input type="text" name="" placeholder="Enter the password" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Confirm Password</span>
-                        <input type="text" placeholder="Confirm the password" required>
+                        <input type="text" name="" placeholder="Confirm the password" required>
                     </div>
                 </div>
                 <div class="gender-details">
@@ -57,9 +57,27 @@
                     </div>
                 </div>
                 <div class="button">
-                    <input type="button" value="Register">
+                    <input type="submit" name="submit" value="Register">
                 </div>
             </form>
+            <?php
+            if (isset($_POST['submit'])) {
+                include('/xampp/htdocs/brainstormy/libs/db_connect.php');
+
+                $FullName = $_POST['FullName'];
+                $ParentsContact = $_POST['ParentsContact'];
+                $qry = "INSERT INTO `student_details`(`FullName`, `ParentsContact`) VALUES ('$FullName', '$ParentsContact')";
+                $run = mysqli_query($con, $qry);
+
+                if ($run == true) {
+            ?>
+                    <script>
+                        alert('Data inserted Succesfully');
+                    </script>
+            <?php
+                }
+            }
+            ?>
         </div>
     </div>
     <!-- Modal Section End -->
