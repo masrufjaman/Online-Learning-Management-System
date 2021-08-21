@@ -9,7 +9,7 @@
   <!-- Font Awsome Link -->
   <script src="https://kit.fontawesome.com/39afdd33d3.js" crossorigin="anonymous"></script>
   <!-- CSS Link -->
-  <link rel="stylesheet" href="styles/admin.css" />
+  <link rel="stylesheet" href="styles/lecturers.css" />
 </head>
 
 <body>
@@ -37,14 +37,9 @@
             <span class="title">Students</span>
           </a>
         </li>
+
         <li>
-          <a href="#">
-            <span class="icon"><i class="fas fa-user-tie"></i></span>
-            <span class="title">Lecturer</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
+          <a href="courses.php">
             <span class="icon"><i class="fas fa-book"></i></i></span>
             <span class="title">Course</span>
           </a>
@@ -101,7 +96,18 @@
       </div>
 
       <!-- CardBox Start -->
+
       <div class="cardBox">
+        <div class="card">
+          <div>
+            <div class="numbers">MD Arif</div>
+            <div class="cardName">ECE, NSU</div>
+          </div>
+          <div class="iconBox">
+            <i class="fas fa-user"></i> <!-- TODO: Add an user image -->
+          </div>
+        </div>
+
         <div class="card">
           <div>
             <div class="numbers">1,042</div>
@@ -111,7 +117,7 @@
             <i class="fas fa-user"></i>
           </div>
         </div>
-        <div class="card">
+    <!--    <div class="card">
           <div>
             <div class="numbers">80</div>
             <div class="cardName">Lecturers</div>
@@ -119,7 +125,7 @@
           <div class="iconBox">
             <i class="fas fa-user-tie"></i>
           </div>
-        </div>
+        </div> -->
         <div class="card">
           <div>
             <div class="numbers">15</div>
@@ -146,7 +152,7 @@
         <div class="recentCourses">
           <div class="cardHeader">
             <h2>Recent Courses</h2>
-            <a href="" class="btn">View All</a>
+            <a href="courses.php" class="btn">View All</a>
           </div>
           <table>
             <thead>
@@ -234,7 +240,7 @@
   </div>
 
   <!-- JS link -->
-  <script src="js/admin.js"></script>
+  <script src="js/lecturers.js"></script>
 </body>
 
 </html>
