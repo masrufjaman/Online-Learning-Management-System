@@ -40,22 +40,22 @@
         <div class="services__card">
           <h2>CSE 482</h2>
           <p>INTERNET AND WEB TECHNOLOGY</p>
-          <div class="services__btn"><button>Get Started</button></div>
+          <a href="course.php"><div class="services__btn"><button>Get Started</button></div></a>
         </div>
         <div class="services__card">
           <h2>CSE 323</h2>
           <p>OPERATING SYSTEMS DESIGN</p>
-          <div class="services__btn"><button>Get Started</button></div>
+          <a href="course.php"><div class="services__btn"><button>Get Started</button></div></a>
         </div>
         <div class="services__card">
           <h2>CSE 327</h2>
           <p>SOFTWARE ENGINEERING</p>
-          <div class="services__btn"><button>Get Started</button></div>
+          <a href="course.php"><div class="services__btn"><button>Get Started</button></div></a>
         </div>
         <div class="services__card">
           <h2>ENG 111</h2>
           <p>PUBLIC SPEAKING</p>
-          <div class="services__btn"><button>Get Started</button></div>
+          <a href="course.php"><div class="services__btn"><button>Get Started</button></div></a>
         </div>
       </div>
     </div>   

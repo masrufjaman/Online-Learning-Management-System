@@ -52,6 +52,8 @@
             <li><a href="#contact">CONTACT</a></li>
             <li><a href="templates/admin/dashboard.php">ADMIN PANEL</a></li>
             <li><a href="templates/students/dashboard.php">CLASSROOM</a></li>
+            <li><a href="templates/lecturers/dashboard.php">TEACHER</a></li>
+            
         </ul>
     </nav>
     <!-- Navbar menu image -->
