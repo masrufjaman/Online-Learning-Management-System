@@ -40,7 +40,7 @@
         <div class="services__card">
           <h2>CSE 482</h2>
           <p>INTERNET AND WEB TECHNOLOGY</p>
-          <a href="course.php"><div class="services__btn"><button>Get Started</button></div></a>
+          <a href="../Comment/index.php"><div class="services__btn"><button>Get Started</button></div></a>
         </div>
         <div class="services__card">
           <h2>CSE 323</h2>
