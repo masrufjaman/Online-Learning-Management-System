@@ -8,8 +8,10 @@
     <div class="bg-modal">
         <div class="modal-content">
             <div class="close">+</div>
+            <!-- For adding new student -->
             <h1>Add New Student</h1>
-            <form action="studentsView.php" method="post">
+            <!-- without <enctype="multipart/form-data"> photo doesn't upload -->
+            <form action="studentsView.php" method="post" enctype="multipart/form-data">
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Full Name</span>
@@ -56,6 +58,10 @@
                         </label>
                     </div>
                 </div>
+                <div class="uploadImage">
+                    <span class="imageTitle">Image:</span>
+                    <input type="file" name="simg" required>
+                </div>
                 <div class="button">
                     <input type="submit" name="submit" value="Register">
                 </div>
@@ -66,7 +72,13 @@
 
                 $FullName = $_POST['FullName'];
                 $ParentsContact = $_POST['ParentsContact'];
-                $qry = "INSERT INTO `student_details`(`FullName`, `ParentsContact`) VALUES ('$FullName', '$ParentsContact')";
+                $imageName = $_FILES['simg']['name'];
+                $tempName = $_FILES['simg']['tmp_name'];
+
+                move_uploaded_file($tempName, "/xampp/htdocs/brainstormy/dataimg/$imageName");
+
+                $qry = "INSERT INTO `student_details`(`FullName`, `ParentsContact`, `Photo`) VALUES ('$FullName', '$ParentsContact', '$imageName')";
+
                 $run = mysqli_query($con, $qry);
 
                 if ($run == true) {
@@ -83,6 +95,7 @@
     <!-- Modal Section End -->
 
     <script>
+        // for clock
         function showTime() {
             var date = new Date();
             var h = date.getHours(); // 0 - 23
