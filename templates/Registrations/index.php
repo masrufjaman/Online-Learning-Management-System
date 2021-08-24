@@ -49,6 +49,22 @@ if (isset($_POST['submit'])) {
 			<div class="input-group">
 				<input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
 			</div>
+			<div class="Entry-details">
+				<span class="Entry-title">Entry</span>
+				<div class="category">
+					<label for="">
+						<span class="dot one"></span>
+						<span class="enter">ADMIN</span>
+					</label>
+					<label for="">
+						<span class="dot one"></span>
+						<span class="enter">TEACHER</span>
+					</label>
+					<label for="">
+						<span class="dot one"></span>
+						<span class="enter">STUDENT</span>
+					</label>
+				</div>	
 			<div class="input-group">
 				<button name="submit" class="btn">Login</button>
 			</div>
