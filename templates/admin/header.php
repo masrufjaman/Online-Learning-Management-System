@@ -20,7 +20,7 @@
         <div class="navigation">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="dashboard.php">
                         <span class="icon"><i class="fas fa-brain"></i></span>
                         <span class="title">
                             <h2>Brainstormy</h2>
@@ -74,7 +74,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../Registrations/logout.php">
                         <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
                         <span class="title">Sign Out</span></a>
                 </li>
