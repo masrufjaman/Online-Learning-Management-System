@@ -52,10 +52,10 @@
             <li><a href="#contact">CONTACT</a></li>
             <li><a href="templates/Comment/index.php">COMMENT</a></li>
             <li><a href="Registrations/index.php">LOGIN / REGISTRATIONS</a></li>
-            <li><a href="templates/admin/dashboard.php">ADMIN PANEL</a></li>            
+            <li><a href="admin/dashboard.php">ADMIN PANEL</a></li>
             <li><a href="templates/lecturers/dashboard.php">TEACHER</a></li>
-        
-            
+
+
         </ul>
     </nav>
     <!-- Navbar menu image -->
