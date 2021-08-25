@@ -52,8 +52,6 @@
             <li><a href="#contact">CONTACT</a></li>
             <li><a href="templates/Comment/index.php">COMMENT</a></li>
             <li><a href="Registrations/index.php">LOGIN / REGISTRATIONS</a></li>
-            <li><a href="admin/dashboard.php">ADMIN PANEL</a></li>
-            <li><a href="templates/lecturers/dashboard.php">TEACHER</a></li>
         </ul>
     </nav>
     <!-- Navbar menu image -->
@@ -64,7 +62,7 @@
     <!-- ABOUT US Start -->
     <section id="about">
         <div class="about-left-col">
-            <img src="./assets/img/about.png" alt="" />
+            <img src="../assets/img/about.png" alt="" />
         </div>
         <div class="about-right-col">
             <div class="about-text">
@@ -101,17 +99,17 @@
     <section id="features">
         <div class="feature-row">
             <div class="feature-col">
-                <img src="./assets/img/pic-1.png" alt="" />
+                <img src="../assets/img/pic-1.png" alt="" />
                 <h4>Learn Anywhere</h4>
                 <p>Switch between your computer, tablet or mobile device</p>
             </div>
             <div class="feature-col">
-                <img src="./assets/img/pic-2.png" alt="" />
+                <img src="../assets/img/pic-2.png" alt="" />
                 <h4>Expert Teachers</h4>
                 <p>Learn from industry experts who are passionate about teaching.</p>
             </div>
             <div class="feature-col">
-                <img src="./assets/img/pic-3.png" alt="" />
+                <img src="../assets/img/pic-3.png" alt="" />
                 <h4>Unlimited Access</h4>
                 <p>
                     Choose what yo'd like to learn from our extensive subscription
@@ -158,7 +156,7 @@
                 </div>
             </div>
             <div class="course-right-col">
-                <img src="./assets/img/course.png" alt="" />
+                <img src="../assets/img/course.png" alt="" />
             </div>
         </div>
     </section>
@@ -168,7 +166,7 @@
     <!-- OFFER section almost same as ABOUT US section -->
     <section id="offer">
         <div class="about-left-col">
-            <img src="./assets/img/offer.png" alt="" />
+            <img src="../assets/img/offer.png" alt="" />
         </div>
         <div class="about-right-col">
             <div class="about-text">
@@ -218,7 +216,7 @@
                 </div>
             </div>
             <div class="contact-right-col">
-                <img src="./assets/img/contact.png" alt="" />
+                <img src="../assets/img/contact.png" alt="" />
             </div>
         </div>
     </section>
@@ -259,7 +257,7 @@
                         <small>copyright 2021 Brainstormy</small>
                     </div>
                     <div class="footer-logo">
-                        <img src="./assets/img/logo.png" alt="" />
+                        <img src="../assets/img/logo.png" alt="" />
                         <!-- common button -->
                         <button class="common-btn">English</button>
                     </div>
@@ -271,10 +269,10 @@
 
     <!-- Social-icons -->
     <div class="social-icons">
-        <img src="./assets/img/facebook.png" alt="" />
-        <img src="./assets/img/instagram.png" alt="" />
-        <img src="./assets/img/twitter.png" alt="" />
-        <img src="./assets/img/linkedin.png" alt="" />
+        <img src="../assets/img/facebook.png" alt="" />
+        <img src="../assets/img/instagram.png" alt="" />
+        <img src="../assets/img/twitter.png" alt="" />
+        <img src="../assets/img/linkedin.png" alt="" />
     </div>
 
     <!-- JS Link -->

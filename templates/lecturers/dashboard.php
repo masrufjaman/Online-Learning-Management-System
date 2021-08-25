@@ -67,7 +67,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="../Registrations/logout.php">
             <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
             <span class="title">Sign Out</span></a>
         </li>
@@ -117,7 +117,7 @@
             <i class="fas fa-user"></i>
           </div>
         </div>
-    <!--    <div class="card">
+        <!--    <div class="card">
           <div>
             <div class="numbers">80</div>
             <div class="cardName">Lecturers</div>
