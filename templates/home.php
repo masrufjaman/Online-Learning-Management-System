@@ -1,4 +1,4 @@
-<?php include("libs/db_connect.php"); ?>
+<?php include("../libs/db_connect.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brainstormy</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
 
     <!-- *Smooth Scroll Link -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
@@ -18,7 +18,7 @@
     <!-- Header Start -->
     <section id="header">
         <div class="container">
-            <img src="./assets/img/logo.png" alt="logo" class="logo" />
+            <img src="../assets/img/logo.png" alt="logo" class="logo" />
             <div class="header-text">
                 <h1>The purpose is to<br />tech, bring learning to people</h1>
                 <!-- small square box -->
@@ -50,14 +50,14 @@
             <li><a href="#courses">COURSES</a></li>
             <li><a href="#offer">OFFER</a></li>
             <li><a href="#contact">CONTACT</a></li>
-            <li><a href="templates/admin/dashboard.php">ADMIN PANEL</a></li>
-            <li><a href="templates/students/dashboard.php">CLASSROOM</a></li>
+            <li><a href="templates/Comment/index.php">COMMENT</a></li>
+            <li><a href="Registrations/index.php">LOGIN / REGISTRATIONS</a></li>
+            <li><a href="admin/dashboard.php">ADMIN PANEL</a></li>
             <li><a href="templates/lecturers/dashboard.php">TEACHER</a></li>
-            
         </ul>
     </nav>
     <!-- Navbar menu image -->
-    <img src="./assets/img/menu.png" alt="Menu" id="menuBtn" />
+    <img src="../assets/img/menu.png" alt="Menu" id="menuBtn" />
     <!-- Side Navbar End -->
     <!-- Header End -->
 
@@ -278,7 +278,7 @@
     </div>
 
     <!-- JS Link -->
-    <script src="./assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
