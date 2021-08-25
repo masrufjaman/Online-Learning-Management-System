@@ -1,13 +1,13 @@
 <?php 
 
-include 'config.php';
+include('../../libs/db_connect.php');
 
 session_start();
 
 error_reporting(0);
 
 if (isset($_SESSION['username'])) {
-    header("Location: welcome.php");
+    header("Location: ../students/dashboard.php");
 }
 
 if (isset($_POST['submit'])) {
@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
 	$password = md5($_POST['password']);
 
 	$sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
-	$result = mysqli_query($conn, $sql);
+	$result = mysqli_query($con, $sql);
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['username'] = $row['username'];

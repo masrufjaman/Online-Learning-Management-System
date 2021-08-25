@@ -1,3 +1,5 @@
 <?php
 
-include("templates/home.php");
+// include("templates/home.php");
+
+header("Location: templates/home.php");

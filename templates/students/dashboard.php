@@ -1,3 +1,13 @@
+<?php 
+
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +23,7 @@
     <!--Navbar Section-->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="#home" id="navbar__logo"><img src="assets/img/logo.png" alt="logo" class="logo" /></a>
+        <a href="#home" id="navbar__logo"><img src="../../assets/img/logo.png" alt="logo" class="logo" /></a>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
           <span class="bar"></span>
@@ -29,6 +39,11 @@
           </li>
           <li class="navbar__btn">
             <a href="#join-class" class="button" id="join-class">Join Class</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../Registrations/logout.php" class="navbar__links" id="services-page"
+              >Logout</a
+            >
           </li>
         </ul>
       </div>

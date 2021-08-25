@@ -1,6 +1,6 @@
 <?php 
 
-include 'config.php';
+include('../../libs/db_connect.php');
 
 error_reporting(0);
 
@@ -18,11 +18,11 @@ if (isset($_POST['submit'])) {
 
 	if ($password == $cpassword) {
 		$sql = "SELECT * FROM users WHERE email='$email'";
-		$result = mysqli_query($conn, $sql);
+		$result = mysqli_query($con, $sql);
 		if (!$result->num_rows > 0) {
 			$sql = "INSERT INTO users (username, email, password)
 					VALUES ('$username', '$email', '$password')";
-			$result = mysqli_query($conn, $sql);
+			$result = mysqli_query($con, $sql);
 			if ($result) {
 				echo "<script>alert('Wow! User Registration Completed.')</script>";
 				$username = "";
