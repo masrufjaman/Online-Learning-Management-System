@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 25, 2021 at 03:46 PM
--- Server version: 10.4.20-MariaDB
--- PHP Version: 7.3.29
+-- Generation Time: Aug 26, 2021 at 08:24 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,18 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `brainstormy_db`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `admin`
---
-
-CREATE TABLE `admin` (
-  `id` int(11) NOT NULL,
-  `Username` varchar(40) NOT NULL,
-  `Password` varchar(40) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -54,7 +42,8 @@ CREATE TABLE `student_details` (
   `TotalFees` int(11) NOT NULL,
   `AdvanceFees` int(11) NOT NULL,
   `RegNo` varchar(40) NOT NULL,
-  `DOJ` date NOT NULL
+  `DOJ` date NOT NULL,
+  `uid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -67,6 +56,7 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `username` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
+  `role` enum('student','teacher','admin') NOT NULL,
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -74,24 +64,21 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
-(1, 'shohaib', 'shohaib@gmail.com', '64ffa17e5454194230b1ccbdceb7ce70');
+INSERT INTO `users` (`id`, `username`, `email`, `role`, `password`) VALUES
+(3, 'masruf', 'masrufjamanr@gmail.com', 'admin', '81dc9bdb52d04dc20036dbd8313ed055'),
+(4, 'shadia', 'shadia@gmail.com', 'student', '81dc9bdb52d04dc20036dbd8313ed055'),
+(5, 'shoaib', 'shoaib@gmail.com', 'teacher', '81dc9bdb52d04dc20036dbd8313ed055');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `student_details`
 --
 ALTER TABLE `student_details`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `uid` (`uid`);
 
 --
 -- Indexes for table `users`
@@ -104,12 +91,6 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `admin`
---
-ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `student_details`
 --
 ALTER TABLE `student_details`
@@ -119,7 +100,17 @@ ALTER TABLE `student_details`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `student_details`
+--
+ALTER TABLE `student_details`
+  ADD CONSTRAINT `student_details_ibfk_1` FOREIGN KEY (`uid`) REFERENCES `users` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
