@@ -25,11 +25,23 @@ if (isset($_POST['submit'])) {
 					VALUES ('$username', '$email', '$password', '$role')";
 			$result = mysqli_query($con, $sql);
 			if ($result) {
-				echo "<script>alert('Wow! User Registration Completed.')</script>";
 				$username = "";
 				$email = "";
 				$_POST['password'] = "";
 				$_POST['cpassword'] = "";
+
+				if ($role == 'student') {
+					echo "<script>alert('Wow! User Registration Completed.')</script>";
+
+					// Insert ID of users table
+					$uid = $con->insert_id;
+
+					$sql = "INSERT INTO student_details (uid)
+					VALUES ('$uid')";
+					$result = mysqli_query($con, $sql);
+				} else {
+					echo "<script>alert('Wow! User Registration Completed.')</script>";
+				}
 			} else {
 				echo "<script>alert('Woops! Something Wrong Went.')</script>";
 			}
