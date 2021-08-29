@@ -1,5 +1,6 @@
 /* Modal Section */
-.bg-modal-add {
+.bg-modal-add,
+.bg-modal-edit {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
