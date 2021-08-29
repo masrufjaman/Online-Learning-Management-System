@@ -9,27 +9,35 @@
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">Full Name</span>
-                    <input type="text" name="FullName" placeholder="Enter the name" required>
+                    <input type="text" name="full_name" placeholder="Enter the name" required>
                 </div>
                 <div class="input-box">
-                    <span class="details">Username</span>
-                    <input type="text" name="" placeholder="Enter the username" required>
+                    <span class="details">Date of Birth</span>
+                    <input type="date" name="dob" placeholder="Enter the date of birth" required>
                 </div>
                 <div class="input-box">
-                    <span class="details">Email</span>
-                    <input type="text" name="" placeholder="Enter the email" required>
+                    <span class="details">Parents Contact No</span>
+                    <input type="text" name="parents_contact" placeholder="Enter the parents contact no" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Phone Number</span>
                     <input type="text" name="ParentsContact" placeholder="Enter the number" required>
                 </div>
                 <div class="input-box">
-                    <span class="details">Password</span>
-                    <input type="text" name="" placeholder="Enter the password" required>
+                    <span class="details">Address</span>
+                    <input type="text" name="address" placeholder="Enter the address" required>
                 </div>
                 <div class="input-box">
-                    <span class="details">Confirm Password</span>
-                    <input type="text" name="" placeholder="Confirm the password" required>
+                    <span class="details">Institution</span>
+                    <input type="text" name="institution" placeholder="Enter the institution" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">AcademicYear</span>
+                    <input type="text" name="academic_year" placeholder="Enter the academic year" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Standerd</span>
+                    <input type="text" name="standerd" placeholder="Enter the standerd" required>
                 </div>
             </div>
             <div class="gender-details">
