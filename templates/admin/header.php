@@ -11,7 +11,7 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="styles/admin.css" />
     <link rel="stylesheet" href="styles/multiButtons.css" />
-    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
 </head>
 
 <body>
