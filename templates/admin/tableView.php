@@ -32,54 +32,42 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td data-table-header=""><input type="checkbox" name="checkbox" id=""></td>
-          <td data-table-header="FullName">Masruf Jaman</td>
-          <td data-table-header="Gender">M</td>
-          <td data-table-header="DOB">17-09-1998</td>
-          <td data-table-header="Photo">Photo</td>
-          <td data-table-header="ParentsContact">01701873645</td>
-          <td data-table-header="Address">Rajshahi</td>
-          <td data-table-header="Institution">NSU</td>
-          <td data-table-header="AcademicYear">2018</td>
-          <td data-table-header="Standerd">BSc</td>
-          <td data-table-header="TotalFees">15,00,000</td>
-          <td data-table-header="AdvanceFees">12,00,000</td>
-          <td data-table-header="RegNo">01</td>
-          <td data-table-header="DOJ">19-08-2021</td>
-        </tr>
-        <tr>
-          <td data-table-header=""><input type="checkbox" name="checkbox" id=""></td>
-          <td data-table-header="FullName">Masruf Jaman</td>
-          <td data-table-header="Gender">M</td>
-          <td data-table-header="DOB">17-09-1998</td>
-          <td data-table-header="Photo">Photo</td>
-          <td data-table-header="ParentsContact">01701873645</td>
-          <td data-table-header="Address">Rajshahi</td>
-          <td data-table-header="Institution">NSU</td>
-          <td data-table-header="AcademicYear">2018</td>
-          <td data-table-header="Standerd">BSc</td>
-          <td data-table-header="TotalFees">15,00,000</td>
-          <td data-table-header="AdvanceFees">12,00,000</td>
-          <td data-table-header="RegNo">01</td>
-          <td data-table-header="DOJ">19-08-2021</td>
-        </tr>
-        <tr>
-          <td data-table-header=""><input type="checkbox" name="checkbox" id=""></td>
-          <td data-table-header="FullName">Masruf Jaman</td>
-          <td data-table-header="Gender">M</td>
-          <td data-table-header="DOB">17-09-1998</td>
-          <td data-table-header="Photo">Photo</td>
-          <td data-table-header="ParentsContact">01701873645</td>
-          <td data-table-header="Address">Rajshahi</td>
-          <td data-table-header="Institution">NSU</td>
-          <td data-table-header="AcademicYear">2018</td>
-          <td data-table-header="Standerd">BSc</td>
-          <td data-table-header="TotalFees">15,00,000</td>
-          <td data-table-header="AdvanceFees">12,00,000</td>
-          <td data-table-header="RegNo">01</td>
-          <td data-table-header="DOJ">19-08-2021</td>
-        </tr>
+
+        <?php
+        include('../../libs/db_connect.php');
+
+        $student_details_querey = "SELECT * FROM student_details";
+        $run_sd_query = mysqli_query($con, $student_details_querey);
+        $nums = mysqli_num_rows($run_sd_query);
+
+        if ($run_sd_query->num_rows > 0) {
+          while ($sdt = mysqli_fetch_assoc($run_sd_query)) {
+        ?>
+            <tr>
+              <td data-table-header="Select"><input type="checkbox" name="checkbox" id=""></td>
+              <!-- <td data-table-header="FullName">
+                <?php echo $sdt['id'] ?>
+              </td> -->
+              <td data-table-header="FullName"><?php echo $sdt['FullName'] ?></td>
+              <td data-table-header="Gender"><?php echo $sdt['Gender'] ?></td>
+              <td data-table-header="DOB"><?php echo $sdt['DOB'] ?></td>
+              <td data-table-header="Photo"><img src="../../dataimg/<?php echo $sdt['Photo'] ?>" style="max-width: 100px;" alt="img"></td>
+              <td data-table-header="ParentsContact"><?php echo $sdt['ParentsContact'] ?></td>
+              <td data-table-header="Address"><?php echo $sdt['Address'] ?></td>
+              <td data-table-header="Institution"><?php echo $sdt['Institution'] ?></td>
+              <td data-table-header="AcademicYear"><?php echo $sdt['AcademicYear'] ?></td>
+              <td data-table-header="Standerd"><?php echo $sdt['Standerd'] ?></td>
+              <td data-table-header="TotalFees"><?php echo $sdt['TotalFees'] ?></td>
+              <td data-table-header="AdvanceFees"><?php echo $sdt['AdvanceFees'] ?></td>
+              <td data-table-header="RegNo"><?php echo $sdt['RegNo'] ?></td>
+              <td data-table-header="DOJ"><?php echo $sdt['DOJ'] ?></td>
+            </tr>
+        <?php
+          }
+        } else {
+          echo "No records found";
+        }
+        ?>
       </tbody>
     </table>
   </form>
