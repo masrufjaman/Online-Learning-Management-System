@@ -15,7 +15,7 @@
     <table class="responsive">
       <thead>
         <tr>
-          <th scope="col">Select</th>
+          <th scope="col">Operation</th>
           <th scope="col">FullName</th>
           <th scope="col">Gender</th>
           <th scope="col">DOB</th>
@@ -44,10 +44,7 @@
           while ($sdt = mysqli_fetch_assoc($run_sd_query)) {
         ?>
             <tr>
-              <td data-table-header="Select"><input type="checkbox" name="checkbox" id=""></td>
-              <!-- <td data-table-header="FullName">
-                <?php echo $sdt['id'] ?>
-              </td> -->
+              <td data-table-header="Operation"><a href="update_form.php?sid=<?php echo $sdt['id']; ?>">Edit</a></td>
               <td data-table-header="FullName"><?php echo $sdt['FullName'] ?></td>
               <td data-table-header="Gender"><?php echo $sdt['Gender'] ?></td>
               <td data-table-header="DOB"><?php echo $sdt['DOB'] ?></td>
