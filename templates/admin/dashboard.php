@@ -93,46 +93,28 @@ include("topbar.php");
     </div>
     <table>
       <tbody>
-        <tr>
-          <td width="60px">
-            <div class="imgBox">
-              <img src="/assets/img/twitter.png" alt="" />
-            </div>
-          </td>
-          <td>
-            <h4>Mitu<br /><span>Bangladesh</span></h4>
-          </td>
-        </tr>
-        <tr>
-          <td width="60px">
-            <div class="imgBox">
-              <img src="/assets/img/twitter.png" alt="" />
-            </div>
-          </td>
-          <td>
-            <h4>Nusrat<br /><span>Bangladesh</span></h4>
-          </td>
-        </tr>
-        <tr>
-          <td width="60px">
-            <div class="imgBox">
-              <img src="/assets/img/twitter.png" alt="" />
-            </div>
-          </td>
-          <td>
-            <h4>Anandah<br /><span>Bangladesh</span></h4>
-          </td>
-        </tr>
-        <tr>
-          <td width="60px">
-            <div class="imgBox">
-              <img src="/assets/img/twitter.png" alt="" />
-            </div>
-          </td>
-          <td>
-            <h4>Shadia<br /><span>Bangladesh</span></h4>
-          </td>
-        </tr>
+        <!-- Fetch resent student details -->
+        <?php 
+        include('./fetch_student.php');
+        if ($run_sd_query->num_rows > 0) {
+          while ($sdt = mysqli_fetch_assoc($run_sd_query)) {
+        ?>
+            <tr>
+              <td width="60px">
+                <div class="imgBox">
+                  <img src="../../dataimg/<?php echo $sdt['Photo'] ?>" alt="img">
+                </div>
+              </td>
+              <td>
+                <h4><?php echo $sdt['FullName'] ?><br /><span><?php echo $sdt['Institution'] ?></span></h4>
+              </td>
+            </tr>
+        <?php
+          }
+        } else {
+          echo "No records found";
+        }
+        ?>
       </tbody>
     </table>
   </div>

@@ -47,13 +47,13 @@
                     // Insert ID of users table
                     $uid = $con->insert_id;
 
-                    $sql = "INSERT INTO student_details (uid)
-					VALUES ('$uid')";
+                    $sql = "INSERT INTO student_details (FullName, uid)
+					VALUES ('$username', '$uid')";
                     $result = mysqli_query($con, $sql);
 
                     header("Location: ./studentsView.php");
                 } else {
-                    echo "<script>alert('Woops! Something Wrong Went.')</script>";
+                    echo "<script>alert('Woops! Something Went Wrong.')</script>";
                 }
             } else {
                 echo "<script>alert('Woops! Email Already Exists.')</script>";

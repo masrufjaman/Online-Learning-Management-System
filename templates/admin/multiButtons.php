@@ -1,12 +1,12 @@
     <div class="btn-group">
-        <button class="btn-group__item btn-group__item" id="add">Add New</button><button class="btn-group__item" id="edit">Edit</button><button class="btn-group__item">Filter</button><button class="btn-group__item">Delete</button><button class="btn-group__item">More</button>
+        <button class="btn-group__item btn-group__item" id="add">Add New</button><button class="btn-group__item">Filter</button><button class="btn-group__item">More</button><button>
+            <div id="MyClockDisplay" class="clock" onload="showTime()"></div> <!-- Clock -->
+        </button>
 
-        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
     </div>
 
     <?php
     include('./add_modal.php');
-    include('./edit_modal.php');
     ?>
 
     <script>
@@ -42,5 +42,11 @@
         showTime();
 
         // Modal Section
+        document.getElementById('add').addEventListener('click', function() {
+            document.querySelector('.bg-modal-add').style.display = 'flex';
+        })
+
+        document.querySelector('.close').addEventListener('click', function() {
+            document.querySelector('.bg-modal-add').style.display = 'none';
+        })
     </script>
-    <script src="./js/modal.js"></script>
