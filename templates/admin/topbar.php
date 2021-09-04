@@ -13,7 +13,7 @@
     <!-- User Image -->
     <div class="user">
         <!-- TODO: Add an user image -->
-        <img src="/assets/img/twitter.png" alt="userImage" />
+        <img src="../../dataimg/IMG_20200622_145004_016.jpg" alt="userImage" />
     </div>
 </div>
 <!-- TopBar  End -->

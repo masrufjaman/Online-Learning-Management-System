@@ -9,9 +9,11 @@
     <!-- Font Awsome Link -->
     <script src="https://kit.fontawesome.com/39afdd33d3.js" crossorigin="anonymous"></script>
     <!-- CSS Link -->
-    <link rel="stylesheet" href="styles/admin.css" />
-    <link rel="stylesheet" href="styles/multiButtons.css" />
-    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="./styles/admin.css" />
+    <link rel="stylesheet" href="./styles/multiButtons.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/tableView.css" />
+    <link rel="stylesheet" href="./styles/noticeScreen.css" />
 </head>
 
 <body>
@@ -20,7 +22,7 @@
         <div class="navigation">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="./dashboard.php">
                         <span class="icon"><i class="fas fa-brain"></i></span>
                         <span class="title">
                             <h2>Brainstormy</h2>
@@ -28,19 +30,19 @@
                     </a>
                 </li>
                 <li>
-                    <a href="dashboard.php">
+                    <a href="./dashboard.php">
                         <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="studentsView.php">
+                    <a href="./studentsView.php">
                         <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
                         <span class="title">Students</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./lecturer.php?sid=<?php echo 't'; ?>">
                         <span class="icon"><i class="fas fa-user-tie"></i></span>
                         <span class="title">Lecturer</span>
                     </a>
@@ -74,7 +76,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../Registrations/logout.php">
                         <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
                         <span class="title">Sign Out</span></a>
                 </li>
