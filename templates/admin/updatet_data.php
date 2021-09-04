@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
 
     move_uploaded_file($tempName, "/xampp/htdocs/brainstormy/dataimg/$imageName");
 
-    $qry = "UPDATE `student_details` SET `FullName` = '$full_name', `DOB` = '$dob', `ParentsContact` = '$parents_contact', `Address` = '$address', `Institution` = '$institution', `AcademicYear` = '$academic_year', `Standerd` = '$standerd' WHERE `id` = $id;";
+    $qry = "UPDATE `student_details` SET `FullName` = '$full_name', `DOB` = '$dob', `Photo` = '$imageName', `ParentsContact` = '$parents_contact', `Address` = '$address', `Institution` = '$institution', `AcademicYear` = '$academic_year', `Standerd` = '$standerd' WHERE `id` = $id;";
 
     $run = mysqli_query($con, $qry);
 

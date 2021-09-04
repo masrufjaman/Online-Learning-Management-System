@@ -15,7 +15,7 @@
     <table class="responsive">
       <thead>
         <tr>
-          <th scope="col">Operation</th>
+          <th scope="col" colspan="2">Operation</th>
           <th scope="col">FullName</th>
           <th scope="col">Gender</th>
           <th scope="col">DOB</th>
@@ -45,6 +45,7 @@
         ?>
             <tr>
               <td data-table-header="Operation"><a href="update_form.php?sid=<?php echo $sdt['id']; ?>">Edit</a></td>
+              <td data-table-header="Operation"><a href="delete_form.php?sid=<?php echo $sdt['uid']; ?>">Delete</a></td>
               <td data-table-header="FullName"><?php echo $sdt['FullName'] ?></td>
               <td data-table-header="Gender"><?php echo $sdt['Gender'] ?></td>
               <td data-table-header="DOB"><?php echo $sdt['DOB'] ?></td>
