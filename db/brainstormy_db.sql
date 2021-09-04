@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 04, 2021 at 06:46 PM
+-- Generation Time: Sep 04, 2021 at 08:10 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -33,16 +33,16 @@ CREATE TABLE `student_details` (
   `Gender` varchar(40) NOT NULL,
   `DOB` date NOT NULL,
   `Photo` text DEFAULT NULL,
-  `ParentsContact` varchar(40) DEFAULT NULL,
+  `ParentsContact` int(11) DEFAULT NULL,
   `Address` varchar(40) NOT NULL,
-  `Institution` int(11) NOT NULL,
+  `Institution` varchar(255) NOT NULL,
   `AcademicYear` int(11) NOT NULL,
-  `Standerd` int(11) NOT NULL,
+  `Standerd` varchar(255) NOT NULL,
   `RollNo` int(11) NOT NULL,
   `TotalFees` int(11) NOT NULL,
   `AdvanceFees` int(11) NOT NULL,
   `RegNo` varchar(40) NOT NULL,
-  `DOJ` date NOT NULL,
+  `DOJ` date NOT NULL DEFAULT current_timestamp(),
   `uid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -51,8 +51,7 @@ CREATE TABLE `student_details` (
 --
 
 INSERT INTO `student_details` (`id`, `FullName`, `Gender`, `DOB`, `Photo`, `ParentsContact`, `Address`, `Institution`, `AcademicYear`, `Standerd`, `RollNo`, `TotalFees`, `AdvanceFees`, `RegNo`, `DOJ`, `uid`) VALUES
-(2, 'Wahid Bin', 'Male', '2021-09-02', NULL, '017653432', 'Sakku', 10, 2021, 5, 0, 0, 0, '', '0000-00-00', 7),
-(3, 'Moinul Partho', '', '2021-09-06', NULL, '01747479246', 'Alokar Mor', 15, 2018, 5, 0, 0, 0, '', '0000-00-00', 8);
+(8, 'Shadia Kabir', '', '1998-12-01', '', 1733462598, 'Khilgaon', 'NSU', 2018, 'BSC', 0, 0, 0, '', '2021-09-05', 14);
 
 -- --------------------------------------------------------
 
@@ -74,10 +73,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `email`, `role`, `password`) VALUES
 (3, 'masruf', 'masrufjamanr@gmail.com', 'admin', '81dc9bdb52d04dc20036dbd8313ed055'),
-(4, 'shadia', 'shadia@gmail.com', 'student', '81dc9bdb52d04dc20036dbd8313ed055'),
 (5, 'shoaib', 'shoaib@gmail.com', 'teacher', '81dc9bdb52d04dc20036dbd8313ed055'),
-(7, 'wahid', 'wahid@gmail.com', 'student', '81dc9bdb52d04dc20036dbd8313ed055'),
-(8, 'partho', 'partho@gmail.com', 'student', '81dc9bdb52d04dc20036dbd8313ed055');
+(14, 'shadia', 'shadia@gmail.com', 'student', '81dc9bdb52d04dc20036dbd8313ed055');
 
 --
 -- Indexes for dumped tables
@@ -104,13 +101,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `student_details`
 --
 ALTER TABLE `student_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables
