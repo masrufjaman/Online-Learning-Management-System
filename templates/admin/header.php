@@ -42,7 +42,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./lecturer.php?sid=<?php echo 't'; ?>">
                         <span class="icon"><i class="fas fa-user-tie"></i></span>
                         <span class="title">Lecturer</span>
                     </a>
