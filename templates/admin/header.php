@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./studentsView.php">
+                    <a href="./studentsView.php?sid=<?php echo 's'; ?>">
                         <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
                         <span class="title">Students</span>
                     </a>

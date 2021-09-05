@@ -7,6 +7,7 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $password = md5($_POST['password']);
     $role = 'teacher';
+    $id = $_POST['sid'];
 
     $sql = "SELECT * FROM users WHERE email='$email'";
     $result = mysqli_query($con, $sql);
@@ -24,7 +25,7 @@ if (isset($_POST['submit'])) {
 					VALUES ('$username', '$uid')";
             $result = mysqli_query($con, $sql);
 
-            header("Location: ./lecturer.php");
+            header("Location: ./lecturer.php?sid=$id ?>");
         } else {
             echo "<script>alert('Woops! Something Went Wrong.')</script>";
         }

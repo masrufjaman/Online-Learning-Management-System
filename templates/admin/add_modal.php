@@ -31,6 +31,7 @@
                     </div>
                 </div>
                 <div class="button">
+                    <input type="hidden" name="sid" value="<?php echo $sid ?>">
                     <input type="submit" name="submit" value="Register">
                 </div>
                 </form>
@@ -45,6 +46,7 @@
                     $email = $_POST['email'];
                     $password = md5($_POST['password']);
                     $role = 'student';
+                    $id = $_POST['sid'];
 
                     $sql = "SELECT * FROM users WHERE email='$email'";
                     $result = mysqli_query($con, $sql);
@@ -62,7 +64,7 @@
 					VALUES ('$username', '$uid')";
                             $result = mysqli_query($con, $sql);
 
-                            header("Location: ./studentsView.php");
+                            header("Location: ./studentsView.php?sid=$id ?>");
                         } else {
                             echo "<script>alert('Woops! Something Went Wrong.')</script>";
                         }
