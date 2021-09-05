@@ -48,7 +48,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./course.php?sid=<?php echo 'c'; ?>">
                         <span class="icon"><i class="fas fa-book"></i></i></span>
                         <span class="title">Course</span>
                     </a>
