@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include('../../libs/db_connect.php');
 
@@ -7,7 +7,7 @@ error_reporting(0);
 session_start();
 
 if (isset($_SESSION['username'])) {
-    header("Location: index.php");
+	header("Location: index.php");
 }
 
 if (isset($_POST['submit'])) {
@@ -15,27 +15,39 @@ if (isset($_POST['submit'])) {
 	$email = $_POST['email'];
 	$password = md5($_POST['password']);
 	$cpassword = md5($_POST['cpassword']);
+	$role = $_POST['role'];
 
 	if ($password == $cpassword) {
 		$sql = "SELECT * FROM users WHERE email='$email'";
 		$result = mysqli_query($con, $sql);
 		if (!$result->num_rows > 0) {
-			$sql = "INSERT INTO users (username, email, password)
-					VALUES ('$username', '$email', '$password')";
+			$sql = "INSERT INTO users (username, email, password, role)
+					VALUES ('$username', '$email', '$password', '$role')";
 			$result = mysqli_query($con, $sql);
 			if ($result) {
-				echo "<script>alert('Wow! User Registration Completed.')</script>";
 				$username = "";
 				$email = "";
 				$_POST['password'] = "";
 				$_POST['cpassword'] = "";
+
+				if ($role == 'student') {
+					echo "<script>alert('Wow! User Registration Completed.')</script>";
+
+					// Insert ID of users table
+					$uid = $con->insert_id;
+
+					$sql = "INSERT INTO student_details (uid)
+					VALUES ('$uid')";
+					$result = mysqli_query($con, $sql);
+				} else {
+					echo "<script>alert('Wow! User Registration Completed.')</script>";
+				}
 			} else {
 				echo "<script>alert('Woops! Something Wrong Went.')</script>";
 			}
 		} else {
 			echo "<script>alert('Woops! Email Already Exists.')</script>";
 		}
-		
 	} else {
 		echo "<script>alert('Password Not Matched.')</script>";
 	}
@@ -45,6 +57,7 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,10 +68,11 @@ if (isset($_POST['submit'])) {
 
 	<title>Register Form - Pure Coding</title>
 </head>
+
 <body>
 	<div class="container">
 		<form action="" method="POST" class="login-email">
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
+			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
 			<div class="input-group">
 				<input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
 			</div>
@@ -67,9 +81,17 @@ if (isset($_POST['submit'])) {
 			</div>
 			<div class="input-group">
 				<input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
-            </div>
-            <div class="input-group">
+			</div>
+			<div class="input-group">
 				<input type="password" placeholder="Confirm Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
+			</div>
+			<div class="input-group">
+				<label for="" style="font-weight: 500;">Select User Type</label>
+				<select name="role" id="" class="user-select">
+					<option selected value="student">Student</option>
+					<option value="teacher">Teacher</option>
+					<option value="admin">Admin</option>
+				</select>
 			</div>
 			<div class="input-group">
 				<button name="submit" class="btn">Register</button>
@@ -78,4 +100,5 @@ if (isset($_POST['submit'])) {
 		</form>
 	</div>
 </body>
+
 </html>
