@@ -54,7 +54,7 @@ include("topbar.php");
   <div class="recentCourses">
     <div class="cardHeader">
       <h2>Recent Courses</h2>
-      <a href="" class="btn">View All</a>
+      <a href="./course.php" class="btn">View All</a>
     </div>
     <table>
       <thead>
