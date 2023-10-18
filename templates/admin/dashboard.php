@@ -54,7 +54,7 @@ include("topbar.php");
   <div class="recentCourses">
     <div class="cardHeader">
       <h2>Recent Courses</h2>
-      <a href="" class="btn">View All</a>
+      <a href="./course.php" class="btn">View All</a>
     </div>
     <table>
       <thead>
@@ -66,24 +66,24 @@ include("topbar.php");
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>CSE482</td>
-          <td>1200</td>
-          <td>FUll</td>
-          <td><span class="status launched">Launched</span></td>
-        </tr>
-        <tr>
-          <td>CSE323</td>
-          <td>1100</td>
-          <td>Offer</td>
-          <td><span class="status pending">Pending</span></td>
-        </tr>
-        <tr>
-          <td>ENG111</td>
-          <td>800</td>
-          <td>Paid</td>
-          <td><span class="status launched">Launched</span></td>
-        </tr>
+        <!-- Fetch resent student details -->
+        <?php
+        include('./fetch_cou.php');
+        if ($run_sd_query->num_rows > 0) {
+          while ($sdt = mysqli_fetch_assoc($run_sd_query)) {
+        ?>
+            <tr>
+              <td><?php echo $sdt['name'] ?></td>
+              <td><?php echo $sdt['price'] ?></td>
+              <td><?php echo $sdt['payment'] ?></td>
+              <td><span class="status <?php echo $sdt['status'] ?>"><?php echo $sdt['status'] ?></span></td>
+            </tr>
+        <?php
+          }
+        } else {
+          echo "No records found";
+        }
+        ?>
       </tbody>
     </table>
   </div>
@@ -94,7 +94,7 @@ include("topbar.php");
     <table>
       <tbody>
         <!-- Fetch resent student details -->
-        <?php 
+        <?php
         include('./fetch_student.php');
         if ($run_sd_query->num_rows > 0) {
           while ($sdt = mysqli_fetch_assoc($run_sd_query)) {

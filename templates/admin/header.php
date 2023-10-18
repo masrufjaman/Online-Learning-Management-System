@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./studentsView.php">
+                    <a href="./studentsView.php?sid=<?php echo 's'; ?>">
                         <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
                         <span class="title">Students</span>
                     </a>
@@ -48,7 +48,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./course.php?sid=<?php echo 'c'; ?>">
                         <span class="icon"><i class="fas fa-book"></i></i></span>
                         <span class="title">Course</span>
                     </a>
@@ -63,7 +63,7 @@
                         <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
                         <span class="title">Help</span></a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#">
                         <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
                         <span class="title">Settings</span>
@@ -74,7 +74,7 @@
                         <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
                         <span class="title">Password</span>
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <a href="../Registrations/logout.php">
                         <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
